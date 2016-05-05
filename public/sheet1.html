@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Information</title>
+		<link rel="stylesheet" href="sheet1.css" />
+	</head>
+	<body onFocus="">
+		<div class="header">
+			<p class="header_text">
+			Please Select The Symptom That Best Suit You  </p>
+			<p class="header_text">Make sure to choose the right option to get the best results and choose none if you do not have that attribute</p>
+			<p class="header_text">In cases of not applicable choose none</p>
+			
+		</div>
+		<form id="symptoms" class="form_content">
+			<div class="form_center">
+				<label class="label_from">Temperature</label>
+				<select name="temp" required class="form-control" form="symptoms">
+					<option value="<98">&lt;98</option>
+					<option value="98-102">98-102</option>
+					<option value="102-104">102-104</option>
+					<option value=">104">&gt;104</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Sight</label>
+				<select name="sight" required class="form-control" form="symptoms">
+					<option value="normal">normal</option>
+					<option value="good">good</option>
+					<option value="bad">bad</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Cough</label>
+				<select name="cough" required class="form-control" form="symptoms">
+					<option value="none">none</option>
+					<option value="light">light</option>
+					<option value="serious">serious</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Hearing</label>
+				<select name="hearing" class="form-control" form="symptoms">
+					<option value="normal">normal</option>
+					<option value="good">good</option>
+					<option value="bad">bad</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Bleeding</label>
+				<select name="bleeding" required class="form-control" form="symptoms">
+					<option value="none">none</option>
+					<option value="light">light</option>
+					<option value="serious">serious</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Conscious</label>
+				<select name="conscious" required class="form-control" form="symptoms">
+					<option value="clear" selected>clear</option>
+					<option value="blurry">blurry</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Vomit</label>
+				<select name="vomit" required class="form-control" form="symptoms">
+					<option value="yes">yes</option>
+					<option value="no">no</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Blood Pressure &nbsp;(systolic/diastolic)</label>
+				<select name="blood" required class="form-control" form="symptoms">
+					<option value="<100/60">&lt;100/60</option>
+					<option value="120/80">120/80</option>
+					<option value="140/100">140/100</option>
+					<option value=">140/100">&gt;140/100</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Pupil(mm)</label>
+				<select name="pupil" required class="form-control" form="symptoms">
+					<option value="<12">&lt;12</option>
+					<option value="12-24mm">12-24</option>
+					<option value=">24mm">&gt;24</option>
+				</select>
+			</div>
+			<div class="form_center">
+				<label class="label_from">Breathing</label>
+				<select name="breathing" required class="form-control" form="symptoms">
+					<option value="<12">&lt;12</option>
+					<option value="12-24">12-24</option>
+					<option value=">24">&gt;24</option>
+				</select>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<button type="submit" id="submit-btn" class="btn btn-success">Submit</button>
+				</div>
+				<div id="result" class="col-md-8">
+					<h1>Result: <span id="woo"></span></h1>
+				</div>
+			</div>
+
+			<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+			<script src="sheet1.js"></script>
+		</form>
+	</body>
+</html>

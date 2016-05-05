@@ -1,0 +1,10 @@
+temp,sight,cough,hearing,bleeding,conscious,vomit,blood,pupil,breathing,GOAL
+98-102,normal,none,good,none,clear,yes,<100/60,>24,<12,y
+98-102,normal,light,good,none,clear,no,<100/60,>24,<12,n
+98-102,bad,none,normal,none,clear,no,120/80,>24,<12,n
+<98,normal,serious,bad,light,blurry,no,120/80,12-24,<12,y
+98-102,normal,none,good,none,blurry,yes,120/80,12-24,<12,n
+102-104,bad,serious,bad,serious,blurry,yes,140/100,12-24,12-24,y
+>104,good,none,good,none,clear,no,140/100,12-24,12-24,y
+<98,bad,serious,bad,none,clear,yes,>140/100,<12,12-24,n
+98-102,bad,serious,bad,serious,blurry,yes,>140/100,<12,>24,y

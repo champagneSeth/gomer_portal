@@ -1,0 +1,15 @@
+{
+  "name": "gomer-portal",
+  "version": "1.0.0",
+  "description": "Decision tree learning project for classifying patients based on symptoms. Determines if they should or should not go to an Emergency Room.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seth Champagne",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
