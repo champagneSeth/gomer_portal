@@ -7,7 +7,7 @@ var tree        = require('./decisionTree.js')
 ,   app         = express()
 ,   router      = express.Router()  
 ,   port        = process.env.PORT || 9000
-,   server      = http.createServer(app);
+,   server      = http.createServer(app)
 ,   unclass     = 'unclassified.csv'
 ;
 

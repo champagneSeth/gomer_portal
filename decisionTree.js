@@ -1,6 +1,6 @@
 var spawn       = require('child_process').spawn
 ,   fs          = require('fs')
-,   csvFile     = 'classified.csv'
+,   classify    = 'classified.csv'
 ,   pyScript    = 'decision_tree_learning.py'
 ,   tree        = {}
 ;
@@ -8,14 +8,14 @@ var spawn       = require('child_process').spawn
 module.exports = {
     traverse    : traverseTree
 ,   update      : learnTree 
-,   csvFile     : csvFile
+,   csvFile     : classify
 }
 
 learnTree();
 
 // Rerun the python script and recieve the new tree as json
 function learnTree() {
-    ps = spawn('python', [pyScript, csvFile]);
+    ps = spawn('python', [pyScript, classify]);
 
     ps.stdout.on('data', function(data) {
         console.log(data.toString());
